@@ -44,7 +44,7 @@ COPY ./src /code
 RUN pip install -r /tmp/requirements.txt
 
 
-ARG DJANGO_SECRET_KEY
+ARG DJANGO_SECRET_KEY=None
 ENV DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
 
 ARG DJANGO_DEBUG=0
